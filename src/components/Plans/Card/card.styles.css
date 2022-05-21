@@ -1,0 +1,20 @@
+.card-wrapper {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #1E5EF3;
+    box-shadow: 7px 15px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 20px;
+}
+
+.items-col-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-btn {
+    margin-top: -0.7rem;
+    margin-left: 2rem;
+    border: 2px solid #1E5EF3;
+}
