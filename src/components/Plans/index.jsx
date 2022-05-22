@@ -36,7 +36,7 @@ const Plans = () => {
   ]
 
   return (
-    <div className='mt-20 mb-20 p-12'>
+    <div className='mt-20 mb-10 p-12'>
       <div className='bg-secondary flex-col-center p-24'>
         <h2 className='font-secondary font-bold text-3xl'>Choose Your Plan</h2>
         <div className='font-primary mt-6'>

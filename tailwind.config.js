@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: ['./src/**/*.{js,jsx,ts,tsx}', './node_modules/flowbite/**/*.js'],
   theme: {
     screens: {
       sm: '480px',
@@ -7,9 +7,7 @@ module.exports = {
       lg: '976px',
       xl: '1440px',
     },
-    // daisyui: {
-    //   themes: ['corporate'],
-    // },
+
     colors: {
       primary: '#1E5EF3',
       secondary: '#F6F6F6',
@@ -21,5 +19,5 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 }
