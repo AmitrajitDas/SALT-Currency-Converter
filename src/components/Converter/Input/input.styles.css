@@ -1,0 +1,16 @@
+.input-label {
+    font-family: 'HK Grotesk';
+    font-style: normal; 
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #8F8F8F;
+}
+
+.input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #434343;
+    border-bottom: 1px solid #D8D8D8;
+}
