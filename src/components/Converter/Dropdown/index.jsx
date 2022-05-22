@@ -1,10 +1,14 @@
 import './dropdown.styles.css'
 
-const DropDown = ({ currency, curr, setCurr }) => {
+const DropDown = ({ currency, curr, onChangeCurr }) => {
   return (
-    <select className='font-secondary text-2xl font-bold select'>
+    <select
+      value={curr}
+      onChange={onChangeCurr}
+      className='font-secondary text-2xl font-bold select'
+    >
       {currency?.map((c) => (
-        <option value={c} onChange={(e) => setCurr(e.target.value)}>
+        <option key={c} value={c}>
           {c}
         </option>
       ))}

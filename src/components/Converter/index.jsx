@@ -9,11 +9,17 @@ import Arrow from '../../assets/Arrow.png'
 const Converter = () => {
   const currency = ['INR', 'USD', 'GBP', 'EUR']
 
-  const [fromCurr, setFromCurr] = useState('INR')
-  const [toCurr, setToCurr] = useState('USD')
-  const [amount, setAmount] = useState(0)
-  const [res, setRes] = useState(0)
-  const convertCurrency = (to, from, amount) => {
+  const [fromCurr, setFromCurr] = useState()
+  const [toCurr, setToCurr] = useState()
+  const [amount, setAmount] = useState('')
+  const [res, setRes] = useState('')
+
+  useEffect(() => {
+    setFromCurr(currency[0])
+    setToCurr(currency[1])
+  }, [])
+
+  const convertCurrency = (from, to, amount) => {
     var myHeaders = new Headers()
     myHeaders.append('apikey', process.env.REACT_APP_API_KEY)
 
@@ -33,7 +39,7 @@ const Converter = () => {
   }
 
   useEffect(() => {
-    convertCurrency(fromCurr, toCurr, amount)
+    // convertCurrency(fromCurr, toCurr, amount)
     console.log(res)
   }, [fromCurr, toCurr, amount])
 
@@ -46,7 +52,7 @@ const Converter = () => {
             <Dropdown
               currency={currency}
               curr={fromCurr}
-              setCurr={setFromCurr}
+              onChangeCurr={(e) => setFromCurr(e.target.value)}
             />
           </div>
         </div>
@@ -57,7 +63,11 @@ const Converter = () => {
         />
         <div className='flex flex-row'>
           <div className='mt-8'>
-            <Dropdown currency={currency} curr={toCurr} setCurr={setToCurr} />
+            <Dropdown
+              currency={currency}
+              curr={toCurr}
+              onChangeCurr={(e) => setToCurr(e.target.value)}
+            />
           </div>
           <Input amount={res} setAmount={setRes} type='to' />
         </div>
@@ -69,7 +79,7 @@ const Converter = () => {
           style={{ width: '2rem', marginBottom: '2rem', marginLeft: '2rem' }}
         />
         <div className='font-primary text-primary'>
-          Conversion rate of : 1 {toCurr} = 75 {fromCurr}
+          Conversion rate of : 1 {toCurr} = {1 / res?.info?.rate} {fromCurr}
         </div>
       </div>
     </div>
