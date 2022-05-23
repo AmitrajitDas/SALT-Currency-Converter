@@ -1,8 +1,11 @@
-import './newletter.styles.css'
+import './newsletter.styles.css'
 
 const Newsletter = () => {
   return (
-    <div className='m-36' style={{ marginTop: '-1rem' }}>
+    <div
+      className='my-36 mr-36 ml-56'
+      style={{ marginTop: '-10rem', position: 'absolute' }}
+    >
       <div className='newsletter-container p-24 flex flex-row justify-between'>
         <div className='flex flex-col'>
           <div className='newsletter-header'>Subscribe Now to</div>

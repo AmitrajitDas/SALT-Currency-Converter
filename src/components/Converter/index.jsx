@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Dropdown from './Dropdown'
 import Input from './Input'
-// import { convertCurrency } from '../../api/currencyAPI'
+import { convertCurrency } from '../../api/currencyAPI'
 import './converter.styles.css'
 import Arrow from '../../assets/Group 1828.png'
 import Circle from '../../assets/Ellipse 152.png'
@@ -15,27 +15,8 @@ const Converter = () => {
   const [amount, setAmount] = useState()
   const [res, setRes] = useState()
 
-  const convertCurrency = (from, to, amount) => {
-    var myHeaders = new Headers()
-    myHeaders.append('apikey', process.env.REACT_APP_API_KEY)
-
-    var requestOptions = {
-      method: 'GET',
-      redirect: 'follow',
-      headers: myHeaders,
-    }
-
-    fetch(
-      `https://api.apilayer.com/fixer/convert?to=${to}&from=${from}&amount=${amount}`,
-      requestOptions
-    )
-      .then((response) => response.json())
-      .then((result) => setRes(result))
-      .catch((error) => console.log('error', error))
-  }
-
   useEffect(() => {
-    // convertCurrency(fromCurr, toCurr, amount)
+    // convertCurrency(fromCurr, toCurr, amount).then((data) => setRes(data))
     console.log(res)
   }, [fromCurr, toCurr, amount])
 

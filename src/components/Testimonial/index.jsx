@@ -3,7 +3,7 @@ import './testimonial.styles.css'
 
 const Testimonial = () => {
   return (
-    <div className='mt-12 testi-center p-12'>
+    <div className='mt-12 mb-36 testi-center p-12'>
       <div className='testi-header'>Trusted by Thousands of</div>
       <div className='testi-header'>Happy Customer</div>
       <div className='mt-6 testi-sub'>

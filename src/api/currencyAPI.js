@@ -1,21 +1,18 @@
-export const convertCurrency = (from, to, amount) => {
-  var data
-  var myHeaders = new Headers()
-  myHeaders.append('apikey', process.env.REACT_APP_API_KEY)
+import axios from 'axios'
 
-  var requestOptions = {
-    method: 'GET',
-    redirect: 'follow',
-    headers: myHeaders,
+export const convertCurrency = async (from, to, amount) => {
+  try {
+    const { data } = await axios.get(
+      `https://api.apilayer.com/fixer/convert?to=${to}&from=${from}&amount=${amount}`,
+      {
+        headers: {
+          apikey: process.env.REACT_APP_API_KEY,
+        },
+      }
+    )
+    console.log(data)
+    return data
+  } catch (error) {
+    console.log(error)
   }
-
-  fetch(
-    `https://api.apilayer.com/fixer/convert?to=${to}&from=${from}&amount=${amount}`,
-    requestOptions
-  )
-    .then((response) => response.json())
-    .then((result) => (data = result))
-    .catch((error) => console.log('error', error))
-
-  return data
 }

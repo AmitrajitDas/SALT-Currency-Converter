@@ -10,8 +10,6 @@ import 'swiper/css/pagination'
 import Card from './Card'
 
 const Carousel = () => {
-  const slidesNum = 3
-
   return (
     <Container className='mt-12'>
       <Swiper
