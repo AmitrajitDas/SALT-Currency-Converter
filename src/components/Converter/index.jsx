@@ -16,7 +16,7 @@ const Converter = () => {
   const [res, setRes] = useState()
 
   useEffect(() => {
-    // convertCurrency(fromCurr, toCurr, amount).then((data) => setRes(data))
+    convertCurrency(fromCurr, toCurr, amount).then((data) => setRes(data))
     console.log(res)
   }, [fromCurr, toCurr, amount])
 

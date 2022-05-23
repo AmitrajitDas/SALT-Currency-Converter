@@ -26,7 +26,7 @@ const Card = ({ plan }) => {
           <div className='font-bold'>{plan.charge}</div>/mo
         </div>
       )}
-      <button className='card-btn rounded-full text-primary font-bold px-8 py-2 cursor-pointer mr-6'>
+      <button className='card-btn rounded-full text-primary font-bold px-8 py-2 cursor-pointer mr-6 hover:bg-primary hover:text-[#FFFFFF]'>
         Sign Up
       </button>
     </div>
