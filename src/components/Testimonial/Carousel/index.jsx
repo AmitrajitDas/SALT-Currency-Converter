@@ -29,7 +29,7 @@ const Carousel = () => {
         {Feedbacks.map((feedback, index) => {
           return (
             <SwiperSlide key={index}>
-              <Card />
+              <Card feedback={feedback} />
             </SwiperSlide>
           )
         })}

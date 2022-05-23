@@ -8,9 +8,13 @@ const Newsletter = () => {
     >
       <div className='newsletter-container p-24 flex flex-row justify-between'>
         <div className='flex flex-col'>
-          <div className='newsletter-header'>Subscribe Now to</div>
-          <div className='newsletter-header'>Get Special Features!</div>
-          <div className='newsletter-sub mt-2'>
+          <div className='font-secondary text-3xl font-semibold'>
+            Subscribe Now to
+          </div>
+          <div className='font-secondary text-3xl font-semibold'>
+            Get Special Features!
+          </div>
+          <div className='font-primary text-[#818181] mt-2'>
             Banking, but seasoned with SALT.
           </div>
         </div>

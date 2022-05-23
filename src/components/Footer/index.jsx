@@ -10,40 +10,50 @@ const Footer = () => {
     <div className='bg-background flex flex-row px-36 pt-36 pb-12'>
       <div className='flex flex-col m-12'>
         <img src={SALT} alt='salt' className='w-28' />
-        <div className='salt-info mt-6'>Salt provides borderless banking</div>
-        <div className='salt-info'>and compliance solutions.</div>
-        <div className='salt-info-2 mt-8'>
+        <div className='text-[#434343] font-primary text-lg mt-6'>
+          Salt provides borderless banking
+        </div>
+        <div className='text-[#434343] font-primary text-lg'>
+          and compliance solutions.
+        </div>
+        <div className='text-[#434343] font-primary text-sm mt-8'>
           Copyright @ Poziom Ventures Pvt. Ltd
         </div>
-        <div className='salt-info-2'>
+        <div className='text-[#434343] font-primary text-sm'>
           Disclaimer | Privacy Policy | Terms of Service
         </div>
       </div>
       <div className='flex flex-col ml-48 mt-12'>
-        <div className='footer-h6'>Company</div>
-        <div className='pages flex flex-col mt-8'>
-          <div>About Us</div>
-          <div>Blogs</div>
-          <div>Careers</div>
+        <div className='font-primary font-bold text-lg text-[#434343]'>
+          Company
         </div>
-        <div className='contact-us'>contact@salt.pe</div>
+        <div className='font-primary text-base flex flex-col mt-8'>
+          <div className='mb-2'>About Us</div>
+          <div className='mb-2'>Blogs</div>
+          <div className='mb-2'>Careers</div>
+        </div>
+        <div className='font-primary font-bold text-base text-[#434343]'>
+          contact@salt.pe
+        </div>
       </div>
       <div className='flex flex-col ml-48 mt-12'>
-        <div className='footer-h6'>Add us to your life!</div>
-        <div className='pages flex flex-col mt-8'>
-          <div className='flex flex-row'>
+        <div className='font-primary font-bold text-lg text-[#434343]'>
+          Add us to your life!
+        </div>
+        <div className='font-primary text-base flex flex-col mt-8'>
+          <div className='flex flex-row mb-2'>
             <FacebookIcon />
             <div className='ml-2'>Facebook</div>
           </div>
-          <div className='flex flex-row'>
+          <div className='flex flex-row mb-2'>
             <TwitterIcon />
             <div className='ml-2'>Twitter</div>
           </div>
-          <div className='flex flex-row'>
+          <div className='flex flex-row mb-2'>
             <LinkedInIcon />
             <div className='ml-2'>Linkedin</div>
           </div>
-          <div className='flex flex-row'>
+          <div className='flex flex-row mb-2'>
             <InstagramIcon />
             <div className='ml-2'>Instagram</div>
           </div>
