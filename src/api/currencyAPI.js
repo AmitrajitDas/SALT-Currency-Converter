@@ -1,6 +1,7 @@
-export const convertCurrency = (to, from, amount) => {
+export const convertCurrency = (from, to, amount) => {
+  var data
   var myHeaders = new Headers()
-  myHeaders.append('apikey', 'Y28Zgxhqc85b3C2atkrXSRbfGSzqjPQo')
+  myHeaders.append('apikey', process.env.REACT_APP_API_KEY)
 
   var requestOptions = {
     method: 'GET',
@@ -8,17 +9,13 @@ export const convertCurrency = (to, from, amount) => {
     headers: myHeaders,
   }
 
-  let res
-
   fetch(
     `https://api.apilayer.com/fixer/convert?to=${to}&from=${from}&amount=${amount}`,
     requestOptions
   )
     .then((response) => response.json())
-    .then((result) => {
-      res = result
-    })
+    .then((result) => (data = result))
     .catch((error) => console.log('error', error))
 
-  return res
+  return data
 }
