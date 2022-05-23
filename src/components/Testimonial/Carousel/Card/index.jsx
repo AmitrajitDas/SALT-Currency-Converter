@@ -1,23 +1,22 @@
 import './card.styles.css'
 import ProfileEllipse from '../../../../assets/ProfileEllipse.png'
 import Star from '../../../../assets/Star.png'
-const Card = () => {
+
+const Card = ({ feedback }) => {
+  const { name, location, review, rating } = feedback
+
   return (
     <div className='card-container p-4 flex flex-col'>
       <div className='flex flex-row'>
         <img src={ProfileEllipse} alt='profile' />
         <div className='flex flex-col ml-2'>
-          <div className='profile-name'>Vizet Robert</div>
-          <div className='profile-loc'>Arsaw, Poland</div>
+          <div className='font-primary font-bold'>{name}</div>
+          <div className='font-primary text-sm'>{location}</div>
         </div>
-        <div className='ml-36 rating'>4.5</div>
-        <img src={Star} alt='star' className='ml-2 w-4 h-3.5' />
+        <div className='ml-32 font-primary font-bold'>{rating}</div>
+        <img src={Star} alt='star' className='ml-2 mt-0.5 w-4 h-3.5' />
       </div>
-      <div className='review mt-4 w-80'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac elit
-        accumsan, urna nibh nibh et tortor ut enim. Consectetur est est tellus
-        semper luctus. Auctor eget pellentesque at ut sed tincidunt nulla nisl.
-      </div>
+      <div className='font-primary text-xs mt-4 w-80'>{review}</div>
     </div>
   )
 }
