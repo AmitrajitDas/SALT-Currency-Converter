@@ -10,7 +10,7 @@ const Hero = () => {
         <div className='mt-12'>Banking, but seasoned with SALT.</div>
         <div>We deal with all things related to global business</div>
         <div>banking so that you don't have to.</div>
-        <button className='mt-12 hero-btn text-secondary rounded-full cursor-pointer hover:bg-[#1541AA]'>
+        <button className='mt-12 font-primary font-bold hero-btn text-secondary rounded-full cursor-pointer hover:bg-[#1541AA]'>
           Get Started!
         </button>
       </div>

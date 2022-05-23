@@ -14,7 +14,7 @@ const Newsletter = () => {
             Banking, but seasoned with SALT.
           </div>
         </div>
-        <button className='newsletter-btn text-secondary rounded-full cursor-pointer hover:bg-[#1541AA]'>
+        <button className='newsletter-btn text-secondary rounded-full cursor-pointer hover:bg-[#1541AA] font-primary font-bold'>
           Subscribe Now!
         </button>
       </div>
