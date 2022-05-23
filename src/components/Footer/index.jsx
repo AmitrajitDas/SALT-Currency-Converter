@@ -28,11 +28,11 @@ const Footer = () => {
           Company
         </div>
         <div className='font-primary text-base flex flex-col mt-8'>
-          <div className='mb-2'>About Us</div>
-          <div className='mb-2'>Blogs</div>
-          <div className='mb-2'>Careers</div>
+          <div className='mb-2 hover:font-bold cursor-pointer'>About Us</div>
+          <div className='mb-2 hover:font-bold cursor-pointer'>Blogs</div>
+          <div className='mb-2 hover:font-bold cursor-pointer'>Careers</div>
         </div>
-        <div className='font-primary font-bold text-base text-[#434343]'>
+        <div className='font-primary font-bold cursor-pointer text-base text-[#434343]'>
           contact@salt.pe
         </div>
       </div>
@@ -43,19 +43,19 @@ const Footer = () => {
         <div className='font-primary text-base flex flex-col mt-8'>
           <div className='flex flex-row mb-2'>
             <FacebookIcon />
-            <div className='ml-2'>Facebook</div>
+            <div className='ml-2 hover:font-bold cursor-pointer'>Facebook</div>
           </div>
           <div className='flex flex-row mb-2'>
             <TwitterIcon />
-            <div className='ml-2'>Twitter</div>
+            <div className='ml-2 hover:font-bold cursor-pointer'>Twitter</div>
           </div>
           <div className='flex flex-row mb-2'>
             <LinkedInIcon />
-            <div className='ml-2'>Linkedin</div>
+            <div className='ml-2 hover:font-bold cursor-pointer'>Linkedin</div>
           </div>
           <div className='flex flex-row mb-2'>
             <InstagramIcon />
-            <div className='ml-2'>Instagram</div>
+            <div className='ml-2 hover:font-bold cursor-pointer'>Instagram</div>
           </div>
         </div>
       </div>
