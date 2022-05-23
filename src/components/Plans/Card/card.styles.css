@@ -18,3 +18,12 @@
     margin-left: 2rem;
     border: 2px solid #1E5EF3;
 }
+
+.plan-font {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #979797;
+}

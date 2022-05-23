@@ -10,7 +10,7 @@ const Card = ({ plan }) => {
       <div className='mt-12 flex flex-col'>
         {plan.plansArr?.map((plan) => (
           <>
-            <div className='flex flex-row mt-6'>
+            <div className='flex flex-row mt-6 plan-font'>
               <img src={Tick} alt='tick' />
               <div className='font-secondary ml-3'>{plan}</div>
             </div>

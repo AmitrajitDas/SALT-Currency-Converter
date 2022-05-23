@@ -2,6 +2,7 @@ import Layout from './components/Layout'
 import Hero from './components/Hero'
 import Plans from './components/Plans'
 import Converter from './components/Converter'
+import Testimonial from './components/Testimonial'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Hero />
         <Plans />
         <Converter />
+        <Testimonial />
       </Layout>
     </div>
   )
