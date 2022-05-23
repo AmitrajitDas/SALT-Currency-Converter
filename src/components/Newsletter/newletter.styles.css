@@ -1,0 +1,38 @@
+.newsletter-container {
+    background: #FFFFFF;
+    box-shadow: 0px 40px 80px rgba(0, 0, 0, 0.03), 0px 32px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 15px 25.4815px rgba(0, 0, 0, 0.0182222);
+    border-radius: 21px;
+}
+
+.newsletter-header {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.newsletter-sub {
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    color: #818181;
+}
+
+.newsletter-btn {
+    width: 192px;
+    height: 49px;
+    background: #1E5EF3;
+    box-shadow: 0px 126.415px 150.943px rgba(30, 94, 243, 0.07), 0px 81.9357px 88.3997px rgba(30, 94, 243, 0.0531481), 0px 6px 48.0783px rgba(30, 94, 243, 0.2), 0px 25.283px 24.5283px rgba(30, 94, 243, 0.12), 0px 10.3005px 12.2991px rgba(30, 94, 243, 0.04), 0px 2.34102px 5.9399px rgba(30, 94, 243, 0.14);
+    border-radius: 10px;
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+}

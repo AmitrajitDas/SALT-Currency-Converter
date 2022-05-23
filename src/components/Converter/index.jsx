@@ -40,7 +40,7 @@ const Converter = () => {
   }, [fromCurr, toCurr, amount])
 
   return (
-    <div className='mx-12 converter-container'>
+    <div className='m-16 converter-container'>
       <div className='p-12 flex flex-row justify-between'>
         <div className='flex flex-row'>
           <Input amount={amount} setAmount={setAmount} type='from' />
