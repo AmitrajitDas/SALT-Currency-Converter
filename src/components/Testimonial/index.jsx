@@ -10,7 +10,7 @@ const Testimonial = () => {
         These are the stories of our customers who have joined us with
       </div>
       <div className='testi-sub'>
-        great pleasure when using this crazy noebank.
+        great pleasure when using this crazy neobank.
       </div>
       <Carousel />
     </div>

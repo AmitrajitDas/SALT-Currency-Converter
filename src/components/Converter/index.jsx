@@ -16,7 +16,7 @@ const Converter = () => {
   const [res, setRes] = useState()
 
   useEffect(() => {
-    convertCurrency(fromCurr, toCurr, amount).then((data) => setRes(data))
+    // convertCurrency(fromCurr, toCurr, amount).then((data) => setRes(data))
     console.log(res)
   }, [fromCurr, toCurr, amount])
 
@@ -60,7 +60,12 @@ const Converter = () => {
         <img
           src={Shield}
           alt='shield'
-          style={{ width: '2rem', marginBottom: '2rem', marginLeft: '2rem' }}
+          style={{
+            width: '2rem',
+            marginBottom: '2rem',
+            marginLeft: '2rem',
+            marginTop: '0.2rem',
+          }}
         />
         <div className='font-primary font-semibold text-lg text-primary mt-1'>
           Conversion rate of : 1 {toCurr} = {1 / res?.info?.rate} {fromCurr}
