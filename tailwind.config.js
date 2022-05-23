@@ -12,6 +12,7 @@ module.exports = {
       primary: '#1E5EF3',
       secondary: '#F6F6F6',
       text: '#161616',
+      background: '#F8F8F8',
     },
     fontFamily: {
       primary: ['HK Grotesk', 'sans-serif'],

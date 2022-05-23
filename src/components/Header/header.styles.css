@@ -7,3 +7,12 @@
     margin-left: 2rem;
     border: 2px solid #1E5EF3;
 }
+
+.nav-links {
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #161616;
+}
