@@ -4,7 +4,14 @@ const Newsletter = () => {
   return (
     <div
       className='my-36 mr-36 ml-56'
-      style={{ marginTop: '-10rem', position: 'absolute' }}
+      style={{
+        marginTop: '-10rem',
+        position: 'absolute',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
     >
       <div className='newsletter-container p-24 flex flex-row justify-between'>
         <div className='flex flex-col'>
