@@ -4,7 +4,7 @@ import './card.styles.css'
 
 const Card = ({ plan }) => {
   return (
-    <div className='card-wrapper items-col-center p-12 mx-8'>
+    <div className='card-wrapper items-col-center p-12 mx-8 shadow-xl hover:shadow-2xl shadow-black'>
       <img src={Vector} alt='vector' />
       <div className='mt-6 font-bold text-2xl font-secondary'>{plan.tier}</div>
       <div className='mt-12 flex flex-col'>
