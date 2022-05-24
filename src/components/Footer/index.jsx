@@ -7,7 +7,7 @@ import './footer.styles.css'
 
 const Footer = () => {
   return (
-    <div className='bg-background flex flex-row px-36 pt-36 pb-12'>
+    <div className='bg-background px-36 pt-36 pb-12 wrapper'>
       <div className='flex flex-col m-12'>
         <img src={SALT} alt='salt' className='w-28' />
         <div className='text-[#434343] font-primary text-lg mt-6'>

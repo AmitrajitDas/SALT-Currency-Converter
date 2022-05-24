@@ -22,7 +22,7 @@ const Converter = () => {
 
   return (
     <div className='m-16 converter-container'>
-      <div className='p-12 flex flex-row justify-between'>
+      <div className='p-12 flex flex-row flex-wrap justify-between'>
         <div className='flex flex-row'>
           <Input amount={amount} setAmount={setAmount} type='from' />
           <div className='mt-12 ml-3'>

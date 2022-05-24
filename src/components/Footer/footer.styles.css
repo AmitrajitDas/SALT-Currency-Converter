@@ -1,3 +1,10 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .salt-info {
     font-family: 'HK Grotesk';
     font-style: normal;

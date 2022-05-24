@@ -8,7 +8,6 @@ const DropDown = ({ currency, curr, onChangeCurr }) => {
   return (
     <Select
       value={curr}
-      placeholder='F'
       onChange={onChangeCurr}
       className={classes.select}
     >
