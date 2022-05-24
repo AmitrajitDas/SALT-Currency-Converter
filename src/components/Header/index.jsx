@@ -7,7 +7,7 @@ const Header = () => {
       <div className='flex flex-row'>
         <img src={Logo} alt='logo' className='cursor-pointer' />
         <div className='ml-12 flex flex-row nav-links'>
-          {window.location.pathname ? (
+          {window.location.pathname === '/' ? (
             <div className='mx-6 cursor-pointer text-primary font-bold'>
               About
             </div>
