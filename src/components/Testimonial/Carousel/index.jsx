@@ -1,4 +1,4 @@
-import { Container } from '@mui/material'
+import { Container, useMediaQuery } from '@mui/material'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, FreeMode, Pagination } from 'swiper'
 import { Feedbacks } from '../../../data/Feedback'
@@ -10,10 +10,12 @@ import 'swiper/css/pagination'
 import Card from './Card'
 
 const Carousel = () => {
+  const matches = useMediaQuery('(max-width:1024px)')
+
   return (
     <Container className='mt-12'>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={matches ? 1 : 3}
         spaceBetween={30}
         freeMode={true}
         loop={true}

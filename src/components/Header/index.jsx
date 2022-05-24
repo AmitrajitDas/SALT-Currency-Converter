@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className='font-primary py-12 px-44 flex flex-row justify-between'>
       <div className='flex flex-row'>
-        <img src={Logo} alt='logo' className='cursor-pointer' />
+        <img src={Logo} alt='logo' className='cursor-pointer w-28 h-12' />
         <div className='ml-12 flex flex-row nav-links'>
           <div className='mx-6 cursor-pointer hover:text-primary hover:font-bold'>
             About
